@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Maps Autocomplete Styling */
+.pac-container {
+    z-index: 10000 !important;
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 8px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f3f4f6; /* Gray-100 */
+    font-family: sans-serif;
+}
+
+.pac-item {
+    padding: 12px 16px;
+    border-top: 1px solid #f9fafb;
+    color: #374151; /* Gray-700 */
+    cursor: pointer;
+}
+
+.pac-item:first-child { border-top: none; }
+.pac-item:hover { background-color: #f3f4f6; }
+
+.pac-icon { display: none; } /* Cleaner look without default icons */
+.pac-item-query { font-size: 14px; font-weight: 600; color: #111827; }
+
+html, body, #root { height: 100%; width: 100%; overflow: hidden; background-color: #ffffff; }
